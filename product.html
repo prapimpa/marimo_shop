@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body><!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สินค้า | Marimo Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="ข้อความในย่อหน้าของคุณ-removebg-preview.png" alt="Marimo Shop">
+        <h1>Marimo Shop</h1>
+    </div>
+
+    <nav>
+        <a href="home.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+        <a href="contact.html">ติดต่อเรา</a>
+    </nav>
+</header>
+
+<div class="container1">
+    <h2>สินค้าทั้งหมด ทีนี่</h2>
+	<div class="text">
+    <h2 class="bounce">สั่งเลย ⬇︎</h2>
+</div>
+    <p>เลือกชมสินค้าได้ที่นี่</p>
+</div>
+
+
+<div class="pro1">
+    <h3>สินค้าใหม่</h3>
+
+    <div class="pro2">
+        <div class="card" onclick="openPopup('เสื้อยืดผู้ชาย 💫')">
+            <img src="12.png" alt="">
+            <p>เสื้อยืดผู้ชาย 💫</p>
+            <span>199 บาท</span>
+        </div>
+
+        <div class="card" onclick="openPopup('เสื้อยืดผู้ชาย/หญิง 💞')">
+            <img src="13.jpg" alt="">
+            <p>เสื้อยืดผู้ชาย/หญิง 💞</p>
+            <span>199 บาท</span>
+        </div>
+
+        <div class="card" onclick="openPopup('เสื้อพร้อมกางเกงวัยรุ่น 💫')">
+            <img src="14.jpg" alt="">
+            <p>เสื้อพร้อมกางเกงวัยรุ่น 💫</p>
+            <span>299 บาท</span>
+        </div>
+
+        <div class="card" onclick="openPopup('เสื้อเชิ้ตวัยรุ่น 💞')">
+            <img src="15.jpg" alt="">
+            <p>เสื้อเชิ้ตวัยรุ่น 💞</p>
+            <span>149 บาท</span>
+        </div>
+
+        <div class="card" onclick="openPopup('เสื้อกันหนาว 💫')">
+            <img src="17.jpg" alt="">
+            <p>เสื้อกันหนาว 💫</p>
+            <span>349 บาท</span>
+        </div>
+
+        <div class="card" onclick="openPopup('เสื้อกันหนาวน่ารัก 💞')">
+            <img src="H8ff76a4548dd4ece8a6f1e646a4cf6afq.jpg" alt="">
+            <p>เสื้อกันหนาวน่ารัก 💞</p>
+            <span>349 บาท</span>
+        </div>
+    </div>
+</div>
+
+<!-- ===== POPUP ===== -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <h3 id="popupTitle">เลือกสินค้า</h3>
+
+        <label>ไซส์</label>
+        <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+        </select>
+
+        <label>สี</label>
+        <select>
+            <option>ขาว</option>
+            <option>ดำ</option>
+            <option>ชมพู</option>
+            <option>ฟ้า</option>
+        </select>
+
+        <div class="popup-btn">
+            <button onclick="closePopup()">ยกเลิก</button>
+			<button>ซื้อเลย</button>
+            <button>เพิ่มลงตะกร้า</button>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>© 2026 Marimo Style Shop</p>
+</footer>
+<script>
+function openPopup(name) {
+    document.getElementById("popup").style.display = "flex";
+    document.getElementById("popupTitle").innerText = name;
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+</script>
+
+
+</body>
+</html>
